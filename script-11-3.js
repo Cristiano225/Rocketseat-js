@@ -1,3 +1,4 @@
 funtion financialFlow(){
-  let flow = {receitas,despesas}
+  let flow = {receitas:[],
+	      despesas:[] }
 }
