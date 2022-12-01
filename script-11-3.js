@@ -2,7 +2,7 @@
 let family = {
 	receitas:[2500, 3200, 250.43, 360.45],
 	despesas:[320.34, 128.45,176.87, 1450] }
-funtion sum(array){
+function sum(array){
 	let total = 0
 		
 	for (let value of array){
@@ -21,7 +21,7 @@ function calculateBalance(){
 	
 	let balanceText = " Seu saldo foi"
 	if(itsOk) {
-		console.log(ˋSeu saldo é ${balanceText}: R$ ${total.toFixed(2)}ˋ)		
+		console.log(Seu saldo é ${balanceText}: R$ ${total.toFixed(2)}')		
 	}
 }
 
