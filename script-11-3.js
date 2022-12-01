@@ -2,16 +2,27 @@
 let family = {
 	receitas:[2500, 3200, 250.43, 360.45],
 	despesas:[320.34, 128.45,176.87, 1450] }
-funtion financialFlow(){
-	...estrutura de repeticao....
-	for (i=0;i<family.length;i++){
+funtion sum(array){
+	let total = 0
+		
+	for (let value of array){
+		total += value
 	}
-	total = receitas[] - despesas[]
 	return total
 }
-if(total>=0) {
-	console.log('A família está com um saldo de R$ ${total}')
-} else {
-	console.log('A família está com um negativo de R$ ${total}')}
 
+function calculateBalance(){
+	const calculateReceitas = sum(family.receitas)
+	const calculateDespesas = sum(family.despesas)
+	
+	const total = calculateReceitas - calculateDespesas
+	
+	const itsOk = total >= 0
+	
+	let balanceText = " Seu saldo foi"
+	if(itsOk) {
+		console.log(ˋSeu saldo é ${balanceText}: R$ ${total.toFixed(2)}ˋ)		
+	}
+}
 
+calculateBalance()
